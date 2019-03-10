@@ -1,0 +1,89 @@
+.security-dashboard--category {
+    background: $white;
+    padding: 15px;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: ß;
+    }
+
+    .security-dashboard--category-title {
+        border-bottom: 1px solid $light-gray;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 0 10px 7px;
+        text-align: left;
+
+        span {
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: calc(100% - 20px);
+        }
+
+        .fa {
+            color: #555555;
+            float: right;
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+}
+
+.security-dashboard--entry {
+    padding: 10px;
+    border-bottom: 1px solid $light-gray;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    .security-dashboard__entry-status-icon {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        i {
+            margin-top: 20px;
+        }
+    }
+
+    .security-dashboard--entry-title {
+        font-weight: 600;
+        padding: 10px 0;
+        display: block;
+        font-size: 16px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+.security-dashboard--status__good {
+    i {
+        color: $green;
+    }
+}
+
+.security-dashboard--status__warning{
+    i {
+        color: $orange;
+    }
+}
+
+.security-dashboard--status__bad {
+
+    i {
+        color: $red;
+    }
+}
+
+.security-dashboard--status__unknown {
+    i {
+        color: $light-gray;
+    }
+}

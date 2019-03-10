@@ -17,6 +17,7 @@ import SystemAnalytics from 'components/analytics/system_analytics';
 import TeamAnalytics from 'components/analytics/team_analytics';
 import PluginManagement from 'components/admin_console/plugin_management';
 import CustomPluginSettings from 'components/admin_console/custom_plugin_settings';
+import SecurityDashboard from 'components/admin_console/security_dashboard';
 
 import {trackEvent} from 'actions/diagnostics_actions.jsx';
 
@@ -185,6 +186,15 @@ export default {
             schema: {
                 id: 'ServerLogs',
                 component: ServerLogs,
+            },
+        },
+        security_dashboard: {
+            url: 'security_dashboard',
+            title: t('admin.sidebar.security_dashboard'),
+            title_default: 'Security Dashboard',
+            schema: {
+                id: 'SecurityDashboard',
+                component: SecurityDashboard,
             },
         },
     },
