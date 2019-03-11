@@ -1,10 +1,43 @@
+.security-dashboard--overview {
+    padding-bottom: 0 !important;
+
+    > .row {
+        &:nth-child(2) {
+            border-bottom: 1px solid $light-gray;
+        }
+
+        > div:first-child {
+            border-right: 1px solid $light-gray;
+        }
+    }
+
+    .security-dashboard--entry {
+        border-bottom: none;
+        border-right: 1px solid $light-gray;
+        padding-bottom: 15px;
+        text-align: center;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        p {
+            height: 40px;
+        }
+
+        .security-dashboard__entry-status-icon {
+            display: block;
+        }
+    }
+}
+
 .security-dashboard--category {
     background: $white;
     padding: 15px;
     margin-bottom: 20px;
 
     &:last-child {
-        margin-bottom: ß;
+        margin-bottom: 30px;
     }
 
     .security-dashboard--category-title {
@@ -24,9 +57,9 @@
 
         .fa {
             color: #555555;
-            float: right;
             font-size: 16px;
             margin: 0;
+            margin-right: 5px;
         }
     }
 }
@@ -60,10 +93,15 @@
         list-style: none;
         padding-left: 0;
         margin-left: 0;
+        float: left;
+    }
+
+    .security-dashboard--entry-dismiss {
+        float: right;
     }
 }
 
-.security-dashboard--status__good {
+.security-dashboard--status__healthy {
     i {
         color: $green;
     }
@@ -75,7 +113,7 @@
     }
 }
 
-.security-dashboard--status__bad {
+.security-dashboard--status__unhealthy {
 
     i {
         color: $red;
