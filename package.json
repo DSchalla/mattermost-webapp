@@ -64,7 +64,8 @@
     "url-search-params-polyfill": "5.1.0",
     "whatwg-fetch": "3.0.0",
     "xregexp": "4.2.4",
-    "zen-observable": "0.8.13"
+    "zen-observable": "0.8.13",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
@@ -190,6 +191,9 @@
     "test:coverage": "jest --coverage",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
-    "mmjstool": "mmjstool"
-  }
+    "mmjstool": "mmjstool",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
