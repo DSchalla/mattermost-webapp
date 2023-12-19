@@ -60,7 +60,7 @@
     "redux-persist": "4.10.2",
     "redux-persist-transform-filter": "0.0.18",
     "reselect": "4.0.0",
-    "superagent": "3.8.3",
+    "superagent": "7.0.2",
     "url-search-params-polyfill": "5.1.0",
     "whatwg-fetch": "3.0.0",
     "xregexp": "4.2.4",
