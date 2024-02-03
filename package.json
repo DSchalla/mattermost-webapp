@@ -8,7 +8,7 @@
   "dependencies": {
     "@babel/polyfill": "7.4.0",
     "bootstrap": "3.4.1",
-    "bootstrap-colorpicker": "2.5.2",
+    "bootstrap-colorpicker": "3.4.0",
     "chart.js": "2.8.0",
     "compass-mixins": "0.12.10",
     "core-js": "2.6.5",
